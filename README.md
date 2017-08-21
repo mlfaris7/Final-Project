@@ -28,10 +28,13 @@ Manual for installation of the tools can be found at:
 Recommended memory/cpu is 1gb.
 
 ** Detailed usage*
+
 1.	Input the name of the product(polypeptide).
 2.	Click “Submit”
 3.	Copy and paste the protein sequence.
 4.	Click “blastp”
+
+
 ** Demo Data**
 a.	Enter the name of the polypeptide such as “ligase”. The results will be displayed.
 b.	From the displayed output, copy the protein sequence.
