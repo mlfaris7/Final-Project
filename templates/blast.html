@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	 <title>Blast ouput</title>
+	<!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+ <link rel="stylesheet" type="text/css" href="css/search_product.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+
+<body id = 'blast_results'>
+        <form name="blast_out" id="blast_out" method="post" action="./blast.cgi">
+        <input name= "blast_query" type="text" size= '49'  placeholder="Enter an amino acid sequence"/>
+        <input name="submit" type="submit" id="submit" value="blastp">
+        </form>
+<p>
+           <!--<span id=''>0</span> match(es) found.-->
+        </p>
+        <table>
+            <thead>
+            <tr>
+                <td>query_id</td>
+                <td>subject_id</td>
+                <td>p_identity</td>
+                <td>alignment</td>
+                <td>length</td>
+                <td>mismatches</td>
+                <td>gap_opens</td>
+                <td>q_start</td>
+                <td>q_end</td>
+                <td>s_start</td>
+                <td>s_end</td>
+                <td>evalue</td>
+                <td>bit_score</td>
+            </tr>
+            </thead>
+            <tbody>
+                <!-- this will be filled in by javascript when there are results -->
+            </tbody>
+    </table>
